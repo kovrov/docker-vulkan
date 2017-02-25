@@ -8,10 +8,10 @@ RUN apt-get update && \
 	apt-get install -y assimp-utils && \
 	apt-get install -y libassimp-dev && \
 	apt-get install -y git && \
-	wget https://vulkan.lunarg.com/sdk/download/1.0.39.1/linux/vulkansdk-linux-x86_64-1.0.39.1.run && \
-	chmod ugo+x vulkansdk-linux-x86_64-1.0.39.1.run
+	wget -O VulkanSDK.run https://vulkan.lunarg.com/sdk/download/1.0.39.1/linux/vulkansdk-linux-x86_64-1.0.39.1.run?human=true && \
+	chmod ugo+x VulkanSDK.run
 
-RUN	./vulkansdk-linux-x86_64-1.0.39.1.run
+RUN	./VulkanSDK.run
 RUN	cd VulkanSDK/1.0.39.1
 
 ENV VULKAN_SDK="/VulkanSDK/1.0.39.1/x86_64:${VULKAN_SDK}"
