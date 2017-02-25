@@ -5,6 +5,8 @@ RUN apt-get update && \
 	apt-get install -y cmake && \
 	apt-get install -y xorg-dev libglu1-mesa-dev --fix-missing && \
 	apt-get install -y wget && \
+	apt-get install -y assimp-utils && \
+	apt-get install -y libassimp-dev && \
 	apt-get install -y git && \
 	wget https://vulkan.lunarg.com/sdk/download/1.0.39.1/linux/vulkansdk-linux-x86_64-1.0.39.1.run && \
 	chmod ugo+x vulkansdk-linux-x86_64-1.0.39.1.run
