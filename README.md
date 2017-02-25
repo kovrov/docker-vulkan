@@ -1,2 +1,2 @@
 # gcc-cmake-vulkan
-Docker image with Ubuntu, gcc, cmake and LunarG VulkanSDK
+Docker development environment with Ubuntu 16.04, gcc, cmake and LunarG VulkanSDK
