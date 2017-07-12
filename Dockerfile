@@ -8,7 +8,7 @@ RUN apt-get update && \
 	apt-get install -y assimp-utils && \
 	apt-get install -y libassimp-dev && \
 	apt-get install -y git && \
-	apt-get install libboost-dev && \
+	apt-get install -y libboost-dev && \
 	wget -O VulkanSDK.run https://vulkan.lunarg.com/sdk/download/1.0.51.0/linux/vulkansdk-linux-x86_64-1.0.51.0.run?human=true && \
 	chmod ugo+x VulkanSDK.run
 
