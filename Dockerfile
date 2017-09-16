@@ -12,12 +12,12 @@ RUN apt-get update && \
 	apt-get remove -y gcc && \
 	apt-get autoremove -y && \
 	apt-get install -y clang && \
-	wget -O VulkanSDK.run https://vulkan.lunarg.com/sdk/download/1.0.61/linux/vulkansdk-linux-x86_64-1.0.61.run?human=true && \
+	wget -O VulkanSDK.run https://vulkan.lunarg.com/sdk/download/1.0.61.0/linux/vulkansdk-linux-x86_64-1.0.61.0.run?human=true && \
 	chmod ugo+x VulkanSDK.run
 
 RUN	./VulkanSDK.run
-RUN	cd VulkanSDK/1.0.61
-ENV	VULKAN_SDK="/VulkanSDK/1.0.61/x86_64:${VULKAN_SDK}"
+RUN	cd VulkanSDK/1.0.61.0
+ENV	VULKAN_SDK="/VulkanSDK/1.0.61.0/x86_64:${VULKAN_SDK}"
 ENV	PATH="${VULKAN_SDK}/bin:${PATH}"
 ENV	LD_LIBRARY_PATH="${VULKAN_SDK}/lib:${LD_LIBRARY_PATH}"
 ENV	VK_LAYER_PATH="${VULKAN_SDK}/etc/explicit_layer.d:${VK_LAYER_PATH}"
