@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:17.10
 MAINTAINER Peter Mathia <mathiapeter@outlook.com>
 
 RUN apt-get update && \
@@ -7,7 +7,7 @@ RUN apt-get update && \
 	apt-get install -y wget && \
 	apt-get install -y assimp-utils && \
 	apt-get install -y libassimp-dev && \
-	apt-get install -y git && \
+	apt-get install -y libglfw3-dev && \
 	apt-get install -y libboost-all-dev && \
 	apt-get remove -y gcc && \
 	apt-get autoremove -y && \
