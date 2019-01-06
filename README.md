@@ -1,5 +1,7 @@
-# gcc-cmake-vulkan
-Docker development environment with Ubuntu 18.04 LTS, gcc, cmake and LunarG VulkanSDK
+# vulkan-sdk
 
-docker build --rm -f Dockerfile -t gcc-cmake-vulkan:latest .
-docker run --rm -it gcc-cmake-vulkan:latest
+Docker development environment with Ubuntu 18.10, gcc, cmake, ninja, gtest
+and LunarG VulkanSDK.
+
+    docker build --rm -f Dockerfile -t vulkan-sdk:latest .
+    docker run --privileged --rm -it vulkan-sdk:latest
