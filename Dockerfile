@@ -2,6 +2,7 @@ FROM amd64/ubuntu:18.04
 
 RUN apt-get update
 RUN apt-get install -y cmake g++
+RUN apt-get install -y libgtest-dev
 RUN apt-get install -y libglm-dev libxcb-dri3-0 libxcb-present0
 RUN apt-get install -y libpciaccess0 libpng-dev libxcb-keysyms1-dev
 RUN apt-get install -y libxcb-dri3-dev libx11-dev libmirclient-dev
