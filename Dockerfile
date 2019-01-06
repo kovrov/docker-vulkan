@@ -1,4 +1,4 @@
-FROM amd64/ubuntu:18.04
+FROM amd64/ubuntu:18.10
 
 RUN apt-get update
 RUN apt-get install -y cmake ninja-build g++
